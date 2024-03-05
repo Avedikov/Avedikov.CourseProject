@@ -5,8 +5,297 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Avedikov.CourseProject"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="780" Width="900" ResizeMode="NoResize">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="45"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0" Height="45" Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click">
+                <TextBlock Text="Хлеб и хлебобулочные изделия" TextWrapping="Wrap" />
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="2"/>
+                        <Setter Property="Background" Value="Red"/>
+                        <Setter Property="BorderThickness" Value="100"/>
+                        <Setter Property="BorderBrush" Value="Red"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Grid.Column="1" Height="45" Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Напитки" Click="Button_Click_1">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="2"/>
+                        <Setter Property="Background" Value="Red"/>
+                        <Setter Property="BorderThickness" Value="100"/>
+                        <Setter Property="BorderBrush" Value="Red"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Grid.Column="2" Height="45" Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Свежее мясо" Click="Button_Click_2" >
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="2"/>
+                        <Setter Property="Background" Value="Red"/>
+                        <Setter Property="BorderThickness" Value="100"/>
+                        <Setter Property="BorderBrush" Value="Red"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Grid.Column="3" Height="45" Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Свежая рыба" Click="Button_Click_3">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="2"/>
+                        <Setter Property="Background" Value="Red"/>
+                        <Setter Property="BorderThickness" Value="100"/>
+                        <Setter Property="BorderBrush" Value="Red"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Grid.Column="4" Height="45" Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Фрукты и овощи" Click="Button_Click_4">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="2"/>
+                        <Setter Property="Background" Value="Red"/>
+                        <Setter Property="BorderThickness" Value="100"/>
+                        <Setter Property="BorderBrush" Value="Red"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Grid.Column="5" Height="45" Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Замороженная продукция" Click="Button_Click_5" >
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="2"/>
+                        <Setter Property="Background" Value="Red"/>
+                        <Setter Property="BorderThickness" Value="100"/>
+                        <Setter Property="BorderBrush" Value="Red"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </Grid>
+
+        <Grid Grid.Row="1" >
+            <Image Source="C:\Users\ISP\Downloads\12.JPG" Height="200" Width="900"/>
+        </Grid>
+
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            
+            <Border  BorderBrush="Black" BorderThickness="2"  Grid.Column="0" Grid.Row="3">
+            <Grid >
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="155"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="35"/>
+            </Grid.RowDefinitions>
+
+            <Image />
+            <TextBlock Grid.Row="1" Text="108$"  VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <Button Grid.Column="0" Grid.Row="2" Height="25" Width="120" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Купить" />
+
+             </Grid>
+         </Border>
+     </Grid>
+        
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Border  BorderBrush="Black" BorderThickness="2"  Grid.Column="1" Grid.Row="3">
+                <Grid >
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="155"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="35"/>
+                    </Grid.RowDefinitions>
+
+                    <Image />
+                    <TextBlock Grid.Row="1" Text="108$"  VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <Button Grid.Column="0" Grid.Row="2" Height="25" Width="120" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Купить" />
+
+                </Grid>
+            </Border>
+        </Grid>
+
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Border  BorderBrush="Black" BorderThickness="2"  Grid.Column="2" Grid.Row="3">
+                <Grid >
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="155"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="35"/>
+                    </Grid.RowDefinitions>
+
+                    <Image />
+                    <TextBlock Grid.Row="1" Text="108$"  VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <Button Grid.Column="0" Grid.Row="2" Height="25" Width="120" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Купить" />
+
+                </Grid>
+            </Border>
+        </Grid>
+
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Border  BorderBrush="Black" BorderThickness="2"  Grid.Column="3" Grid.Row="3">
+                <Grid >
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="155"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="35"/>
+                    </Grid.RowDefinitions>
+
+                    <Image />
+                    <TextBlock Grid.Row="1" Text="108$"  VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <Button Grid.Column="0" Grid.Row="2" Height="25" Width="120" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Купить" />
+
+                </Grid>
+            </Border>
+        </Grid>
+
+        <Grid Grid.Row="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Border  BorderBrush="Black" BorderThickness="2"  Grid.Column="0" Grid.Row="3">
+                <Grid >
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="155"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="35"/>
+                    </Grid.RowDefinitions>
+
+                    <Image />
+                    <TextBlock Grid.Row="1" Text="108$"  VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <Button Grid.Column="0" Grid.Row="2" Height="25" Width="120" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Купить" />
+
+                </Grid>
+            </Border>
+        </Grid>
+
+        <Grid Grid.Row="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Border  BorderBrush="Black" BorderThickness="2"  Grid.Column="1" Grid.Row="3">
+                <Grid >
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="155"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="35"/>
+                    </Grid.RowDefinitions>
+
+                    <Image />
+                    <TextBlock Grid.Row="1" Text="108$"  VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <Button Grid.Column="0" Grid.Row="2" Height="25" Width="120" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Купить" />
+
+                </Grid>
+            </Border>
+        </Grid>
+        
+        <Grid Grid.Row="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Border  BorderBrush="Black" BorderThickness="2"  Grid.Column="2" Grid.Row="3">
+                <Grid >
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="155"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="35"/>
+                    </Grid.RowDefinitions>
+
+                    <Image />
+                    <TextBlock Grid.Row="1" Text="108$"  VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <Button Grid.Column="0" Grid.Row="2" Height="25" Width="120" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Купить" />
+
+                </Grid>
+            </Border>
+        </Grid>
+
+        <Grid Grid.Row="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Border  BorderBrush="Black" BorderThickness="2"  Grid.Column="3" Grid.Row="3">
+                <Grid >
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="155"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="35"/>
+                    </Grid.RowDefinitions>
+
+                    <Image />
+                    <TextBlock Grid.Row="1" Text="108$"  VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <Button Grid.Column="0" Grid.Row="2" Height="25" Width="120" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Купить" />
+
+                </Grid>
+            </Border>
+        </Grid>
+
+
+
+
+
 
     </Grid>
 </Window>
